@@ -1,0 +1,390 @@
+2024-03-12 23:24:31,717 INFO    StreamThr :24754 [internal.py:wandb_internal():86] W&B internal server running at pid: 24754, started at: 2024-03-12 23:24:31.716423
+2024-03-12 23:24:31,718 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status
+2024-03-12 23:24:31,727 INFO    WriterThread:24754 [datastore.py:open_for_write():87] open: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/run-hpvh3kmz.wandb
+2024-03-12 23:24:31,727 DEBUG   SenderThread:24754 [sender.py:send():378] send: header
+2024-03-12 23:24:31,756 DEBUG   SenderThread:24754 [sender.py:send():378] send: run
+2024-03-12 23:24:32,200 INFO    SenderThread:24754 [dir_watcher.py:__init__():211] watching files in: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files
+2024-03-12 23:24:32,200 INFO    SenderThread:24754 [sender.py:_start_run_threads():1099] run started: hpvh3kmz with start time 1710278671.717315
+2024-03-12 23:24:32,215 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: check_version
+2024-03-12 23:24:32,215 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: check_version
+2024-03-12 23:24:34,085 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: run_start
+2024-03-12 23:24:34,096 DEBUG   HandlerThread:24754 [system_info.py:__init__():26] System info init
+2024-03-12 23:24:34,097 DEBUG   HandlerThread:24754 [system_info.py:__init__():41] System info init done
+2024-03-12 23:24:34,097 INFO    HandlerThread:24754 [system_monitor.py:start():194] Starting system monitor
+2024-03-12 23:24:34,097 INFO    SystemMonitor:24754 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-12 23:24:34,097 INFO    HandlerThread:24754 [system_monitor.py:probe():214] Collecting system info
+2024-03-12 23:24:34,098 INFO    SystemMonitor:24754 [interfaces.py:start():190] Started cpu monitoring
+2024-03-12 23:24:34,099 DEBUG   HandlerThread:24754 [system_info.py:probe():150] Probing system
+2024-03-12 23:24:34,099 INFO    SystemMonitor:24754 [interfaces.py:start():190] Started disk monitoring
+2024-03-12 23:24:34,100 INFO    SystemMonitor:24754 [interfaces.py:start():190] Started gpuapple monitoring
+2024-03-12 23:24:34,103 INFO    SystemMonitor:24754 [interfaces.py:start():190] Started memory monitoring
+2024-03-12 23:24:34,103 INFO    SystemMonitor:24754 [interfaces.py:start():190] Started network monitoring
+2024-03-12 23:24:34,113 DEBUG   HandlerThread:24754 [system_info.py:_probe_git():135] Probing git
+2024-03-12 23:24:34,144 DEBUG   HandlerThread:24754 [system_info.py:_probe_git():143] Probing git done
+2024-03-12 23:24:34,144 DEBUG   HandlerThread:24754 [system_info.py:probe():198] Probing system done
+2024-03-12 23:24:34,145 DEBUG   HandlerThread:24754 [system_monitor.py:probe():223] {'os': 'macOS-14.3.1-arm64-arm-64bit', 'python': '3.9.18', 'heartbeatAt': '2024-03-12T21:24:34.099322', 'startedAt': '2024-03-12T21:24:31.704690', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/akospeter/Personal/Research/boilerplate-detection/train_ltsm.py', 'codePathLocal': 'train_ltsm.py', 'codePath': 'train_ltsm.py', 'git': {'remote': 'https://github.com/Peter-Akos/boilerplate-detection', 'commit': 'e79dce5117e3c1fe0fcb380f0750a086369d3e90'}, 'email': 'peterakos19@gmail.com', 'root': '/Users/akospeter/Personal/Research/boilerplate-detection', 'host': 'Connatixs-MacBook-Pro.local', 'username': 'akospeter', 'executable': '/Users/akospeter/Personal/Research/boilerplate-detection/env/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3228, 'min': 600, 'max': 3228}, 'cpu_freq_per_core': [{'current': 3228, 'min': 600, 'max': 3228}], 'disk': {'/': {'total': 460.4317207336426, 'used': 9.433845520019531}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-03-12 23:24:34,145 INFO    HandlerThread:24754 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-12 23:24:34,145 INFO    HandlerThread:24754 [system_monitor.py:probe():227] Publishing system info
+2024-03-12 23:24:34,145 INFO    HandlerThread:24754 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-12 23:24:34,153 DEBUG   SenderThread:24754 [sender.py:send():378] send: files
+2024-03-12 23:24:34,153 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2024-03-12 23:24:34,208 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-metadata.json
+2024-03-12 23:24:34,277 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-12 23:24:34,277 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: python_packages
+2024-03-12 23:24:34,279 DEBUG   SenderThread:24754 [sender.py:send():378] send: telemetry
+2024-03-12 23:24:34,279 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:24:34,279 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:24:34,279 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:24:34,922 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/9uo0q21j-wandb-metadata.json
+2024-03-12 23:24:35,209 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/requirements.txt
+2024-03-12 23:24:37,659 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:24:42,676 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: telemetry
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:44,443 DEBUG   SenderThread:24754 [sender.py:send():378] send: metric
+2024-03-12 23:24:45,245 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:24:47,250 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:24:48,497 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:24:49,279 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:24:49,279 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:24:49,279 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:24:53,576 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:24:58,592 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:02,615 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:02,616 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:02,616 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:02,617 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:03,179 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:03,180 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:03,180 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:03,180 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:03,303 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:03,708 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:03,709 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:03,712 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:03,917 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:03,918 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:04,300 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:25:04,301 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:25:04,301 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:25:04,304 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:04,304 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/config.yaml
+2024-03-12 23:25:04,429 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-12 23:25:04,478 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: log_artifact
+2024-03-12 23:25:04,951 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:05,308 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.6929345433506959_3_67285477864f5c079660.table.json
+2024-03-12 23:25:05,308 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table
+2024-03-12 23:25:05,309 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media
+2024-03-12 23:25:05,741 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/i9167f6e-media/table/Best f1: 0.6929345433506959_3_67285477864f5c079660.table.json
+2024-03-12 23:25:06,017 INFO    wandb-upload_1:24754 [upload_job.py:push():89] Uploaded file /Users/akospeter/Library/Application Support/wandb/artifacts/staging/tmpuyenn2kv
+2024-03-12 23:25:06,830 INFO    SenderThread:24754 [sender.py:send_request_log_artifact():1431] logged artifact run-hpvh3kmz-Bestf106929345433506959 - {'id': 'QXJ0aWZhY3Q6NzUzNTczMzQ5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0ODE3MTcwMw==', 'latestArtifact': None}}
+2024-03-12 23:25:06,830 DEBUG   SenderThread:24754 [sender.py:send():378] send: files
+2024-03-12 23:25:06,830 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file media/table/Best f1: 0.6929345433506959_3_67285477864f5c079660.table.json with policy now
+2024-03-12 23:25:06,831 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:06,831 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:06,832 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:07,313 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:07,826 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/q46xkic4-media/table/Best f1: 0.6929345433506959_3_67285477864f5c079660.table.json
+2024-03-12 23:25:09,319 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:25:09,843 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:14,853 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:19,302 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:25:19,303 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:25:19,304 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:25:20,471 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:22,989 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:22,990 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:22,990 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:22,991 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:23,367 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:23,525 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:23,526 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:23,526 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:23,526 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:24,233 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:24,234 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:24,234 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:24,235 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:24,372 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:24,436 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-12 23:25:24,436 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: log_artifact
+2024-03-12 23:25:24,441 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:25,377 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.7144976048765382_7_51babe31c5e843e21975.table.json
+2024-03-12 23:25:25,377 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table
+2024-03-12 23:25:25,442 INFO    wandb-upload_1:24754 [upload_job.py:push():89] Uploaded file /Users/akospeter/Library/Application Support/wandb/artifacts/staging/tmpw9s6y4_b
+2024-03-12 23:25:25,790 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/jmebefd6-media/table/Best f1: 0.7144976048765382_7_51babe31c5e843e21975.table.json
+2024-03-12 23:25:26,219 INFO    SenderThread:24754 [sender.py:send_request_log_artifact():1431] logged artifact run-hpvh3kmz-Bestf107144976048765382 - {'id': 'QXJ0aWZhY3Q6NzUzNTczNjU1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0ODE3MTczNg==', 'latestArtifact': None}}
+2024-03-12 23:25:26,219 DEBUG   SenderThread:24754 [sender.py:send():378] send: files
+2024-03-12 23:25:26,219 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:26,219 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file media/table/Best f1: 0.7144976048765382_7_51babe31c5e843e21975.table.json with policy now
+2024-03-12 23:25:26,219 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:26,219 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:26,220 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:26,379 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:26,707 INFO    wandb-upload_1:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/l6lwrabc-media/table/Best f1: 0.7144976048765382_7_51babe31c5e843e21975.table.json
+2024-03-12 23:25:27,381 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:25:31,239 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:34,106 DEBUG   SystemMonitor:24754 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-12 23:25:34,107 DEBUG   SenderThread:24754 [sender.py:send():378] send: telemetry
+2024-03-12 23:25:34,107 DEBUG   SenderThread:24754 [sender.py:send():378] send: stats
+2024-03-12 23:25:34,307 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:25:34,308 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:25:34,308 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:25:36,621 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:38,425 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/config.yaml
+2024-03-12 23:25:42,364 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:42,364 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:42,365 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:42,365 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:42,441 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:43,001 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:43,002 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:43,002 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:43,002 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:43,003 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:43,446 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:43,512 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:43,513 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:43,513 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:43,513 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:43,777 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-12 23:25:43,777 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: log_artifact
+2024-03-12 23:25:43,782 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:25:44,450 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:44,450 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.8506654410635052_11_8e4766a32d36a9500d0d.table.json
+2024-03-12 23:25:44,451 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table
+2024-03-12 23:25:44,847 INFO    wandb-upload_1:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/cjeoapm9-media/table/Best f1: 0.8506654410635052_11_8e4766a32d36a9500d0d.table.json
+2024-03-12 23:25:44,876 INFO    wandb-upload_0:24754 [upload_job.py:push():89] Uploaded file /Users/akospeter/Library/Application Support/wandb/artifacts/staging/tmp6fe7p2uj
+2024-03-12 23:25:45,674 INFO    SenderThread:24754 [sender.py:send_request_log_artifact():1431] logged artifact run-hpvh3kmz-Bestf108506654410635052 - {'id': 'QXJ0aWZhY3Q6NzUzNTczOTUy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0ODE3MTc5NA==', 'latestArtifact': None}}
+2024-03-12 23:25:45,675 DEBUG   SenderThread:24754 [sender.py:send():378] send: files
+2024-03-12 23:25:45,676 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file media/table/Best f1: 0.8506654410635052_11_8e4766a32d36a9500d0d.table.json with policy now
+2024-03-12 23:25:45,676 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:25:45,676 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:25:45,676 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:25:46,185 INFO    wandb-upload_1:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/lujx85tg-media/table/Best f1: 0.8506654410635052_11_8e4766a32d36a9500d0d.table.json
+2024-03-12 23:25:46,461 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:25:47,464 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:25:48,689 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:49,311 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:25:49,312 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:25:49,312 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:25:54,629 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:25:59,645 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:26:01,047 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:01,048 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:01,048 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:01,049 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:01,510 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:01,556 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:01,559 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:01,559 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:01,560 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:02,071 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:02,072 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:02,072 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:02,072 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:02,333 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-12 23:26:02,333 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: log_artifact
+2024-03-12 23:26:02,339 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:02,513 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:02,514 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.8769514037225113_15_c45dfa2f31d33c4b4262.table.json
+2024-03-12 23:26:02,514 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table
+2024-03-12 23:26:02,939 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/6ha1v7fz-media/table/Best f1: 0.8769514037225113_15_c45dfa2f31d33c4b4262.table.json
+2024-03-12 23:26:03,390 INFO    wandb-upload_1:24754 [upload_job.py:push():89] Uploaded file /Users/akospeter/Library/Application Support/wandb/artifacts/staging/tmpsgl2hrl4
+2024-03-12 23:26:04,112 INFO    SenderThread:24754 [sender.py:send_request_log_artifact():1431] logged artifact run-hpvh3kmz-Bestf108769514037225113 - {'id': 'QXJ0aWZhY3Q6NzUzNTc0NTI3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0ODE3MjE0MQ==', 'latestArtifact': None}}
+2024-03-12 23:26:04,112 DEBUG   SenderThread:24754 [sender.py:send():378] send: files
+2024-03-12 23:26:04,112 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file media/table/Best f1: 0.8769514037225113_15_c45dfa2f31d33c4b4262.table.json with policy now
+2024-03-12 23:26:04,112 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:04,112 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:04,113 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:04,113 DEBUG   SenderThread:24754 [sender.py:send():378] send: stats
+2024-03-12 23:26:04,311 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:26:04,315 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:26:04,315 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:26:04,519 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:04,619 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/c1rm2ol3-media/table/Best f1: 0.8769514037225113_15_c45dfa2f31d33c4b4262.table.json
+2024-03-12 23:26:05,522 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:26:05,620 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:26:10,636 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:26:15,654 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:26:19,313 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:26:19,319 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-12 23:26:19,319 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: stop_status
+2024-03-12 23:26:19,621 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:19,621 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:19,621 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:19,622 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:20,193 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:20,194 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:20,194 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:20,194 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:20,583 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:20,723 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:20,724 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:20,724 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:20,724 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:26:20,725 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:20,941 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: log_artifact
+2024-03-12 23:26:20,941 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: log_artifact
+2024-03-12 23:26:20,947 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-12 23:26:21,586 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:21,586 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.9047745697551794_19_a48af057963bcadf39e1.table.json
+2024-03-12 23:26:21,586 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table
+2024-03-12 23:26:21,954 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-12 23:26:22,033 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/8rvtocsw-media/table/Best f1: 0.9047745697551794_19_a48af057963bcadf39e1.table.json
+2024-03-12 23:26:22,035 INFO    wandb-upload_1:24754 [upload_job.py:push():89] Uploaded file /Users/akospeter/Library/Application Support/wandb/artifacts/staging/tmppbdon7ja
+2024-03-12 23:26:22,847 INFO    SenderThread:24754 [sender.py:send_request_log_artifact():1431] logged artifact run-hpvh3kmz-Bestf109047745697551794 - {'id': 'QXJ0aWZhY3Q6NzUzNTc0ODIy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0ODE3MjIxMA==', 'latestArtifact': None}}
+2024-03-12 23:26:22,848 DEBUG   SenderThread:24754 [sender.py:send():378] send: files
+2024-03-12 23:26:22,848 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file media/table/Best f1: 0.9047745697551794_19_a48af057963bcadf39e1.table.json with policy now
+2024-03-12 23:26:22,849 DEBUG   SenderThread:24754 [sender.py:send():378] send: history
+2024-03-12 23:26:22,849 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: summary_record
+2024-03-12 23:26:22,849 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:22,850 DEBUG   SenderThread:24754 [sender.py:send():378] send: telemetry
+2024-03-12 23:26:22,850 DEBUG   SenderThread:24754 [sender.py:send():378] send: exit
+2024-03-12 23:26:22,850 INFO    SenderThread:24754 [sender.py:send_exit():585] handling exit code: 0
+2024-03-12 23:26:22,850 INFO    SenderThread:24754 [sender.py:send_exit():587] handling runtime: 106
+2024-03-12 23:26:22,851 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:22,851 INFO    SenderThread:24754 [sender.py:send_exit():593] send defer
+2024-03-12 23:26:22,851 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: poll_exit
+2024-03-12 23:26:22,851 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:22,851 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-12 23:26:22,852 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:22,852 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-03-12 23:26:22,852 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 1
+2024-03-12 23:26:22,852 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:22,852 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-12 23:26:22,853 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:22,853 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-03-12 23:26:22,853 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 2
+2024-03-12 23:26:22,853 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:22,854 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-12 23:26:22,854 INFO    HandlerThread:24754 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-12 23:26:22,854 DEBUG   SystemMonitor:24754 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-12 23:26:22,854 INFO    HandlerThread:24754 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-12 23:26:22,854 DEBUG   SystemMonitor:24754 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-12 23:26:22,854 INFO    HandlerThread:24754 [interfaces.py:finish():202] Joined disk monitor
+2024-03-12 23:26:23,356 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /var/folders/00/ft6n0snn3g5gtsxj0z9n8lhh0000gp/T/tmph885aiiwwandb/hmmwda9e-media/table/Best f1: 0.9047745697551794_19_a48af057963bcadf39e1.table.json
+2024-03-12 23:26:23,417 INFO    HandlerThread:24754 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-03-12 23:26:23,417 INFO    HandlerThread:24754 [interfaces.py:finish():202] Joined memory monitor
+2024-03-12 23:26:23,417 INFO    HandlerThread:24754 [interfaces.py:finish():202] Joined network monitor
+2024-03-12 23:26:23,418 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-12 23:26:23,418 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:23,418 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-03-12 23:26:23,418 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 3
+2024-03-12 23:26:23,418 DEBUG   SenderThread:24754 [sender.py:send():378] send: stats
+2024-03-12 23:26:23,418 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: poll_exit
+2024-03-12 23:26:23,418 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:23,418 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-12 23:26:23,418 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:23,418 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-03-12 23:26:23,418 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 4
+2024-03-12 23:26:23,418 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:23,418 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-12 23:26:23,418 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:23,418 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-03-12 23:26:23,418 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 5
+2024-03-12 23:26:23,418 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:23,418 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-12 23:26:23,419 DEBUG   SenderThread:24754 [sender.py:send():378] send: summary
+2024-03-12 23:26:23,419 INFO    SenderThread:24754 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2024-03-12 23:26:23,419 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:23,419 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-03-12 23:26:23,419 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 6
+2024-03-12 23:26:23,419 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:23,419 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-12 23:26:23,419 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:23,419 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-03-12 23:26:23,421 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: status_report
+2024-03-12 23:26:23,592 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:23,604 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 7
+2024-03-12 23:26:23,604 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:23,605 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-12 23:26:23,605 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:23,605 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-03-12 23:26:23,961 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-12 23:26:24,597 INFO    Thread-12 :24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/config.yaml
+2024-03-12 23:26:24,698 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 8
+2024-03-12 23:26:24,701 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: poll_exit
+2024-03-12 23:26:24,701 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:24,703 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-12 23:26:24,703 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:24,703 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-03-12 23:26:24,703 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 9
+2024-03-12 23:26:24,704 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:24,704 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-12 23:26:24,704 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:24,704 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-03-12 23:26:24,704 INFO    SenderThread:24754 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-12 23:26:24,967 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-12 23:26:25,600 INFO    SenderThread:24754 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:26:25,600 INFO    SenderThread:24754 [dir_watcher.py:finish():388] scan: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files
+2024-03-12 23:26:25,601 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/requirements.txt requirements.txt
+2024-03-12 23:26:25,601 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log output.log
+2024-03-12 23:26:25,601 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/config.yaml config.yaml
+2024-03-12 23:26:25,602 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json wandb-summary.json
+2024-03-12 23:26:25,604 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-metadata.json wandb-metadata.json
+2024-03-12 23:26:25,611 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.6929345433506959_3_67285477864f5c079660.table.json media/table/Best f1: 0.6929345433506959_3_67285477864f5c079660.table.json
+2024-03-12 23:26:25,612 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.7144976048765382_7_51babe31c5e843e21975.table.json media/table/Best f1: 0.7144976048765382_7_51babe31c5e843e21975.table.json
+2024-03-12 23:26:25,612 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.8506654410635052_11_8e4766a32d36a9500d0d.table.json media/table/Best f1: 0.8506654410635052_11_8e4766a32d36a9500d0d.table.json
+2024-03-12 23:26:25,612 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.8769514037225113_15_c45dfa2f31d33c4b4262.table.json media/table/Best f1: 0.8769514037225113_15_c45dfa2f31d33c4b4262.table.json
+2024-03-12 23:26:25,612 INFO    SenderThread:24754 [dir_watcher.py:finish():402] scan save: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/media/table/Best f1: 0.9047745697551794_19_a48af057963bcadf39e1.table.json media/table/Best f1: 0.9047745697551794_19_a48af057963bcadf39e1.table.json
+2024-03-12 23:26:25,612 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 10
+2024-03-12 23:26:25,612 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: poll_exit
+2024-03-12 23:26:25,612 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:25,612 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-12 23:26:25,613 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:25,613 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-03-12 23:26:25,613 INFO    SenderThread:24754 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-12 23:26:25,971 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-12 23:26:25,972 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: poll_exit
+2024-03-12 23:26:26,037 INFO    wandb-upload_0:24754 [upload_job.py:push():131] Uploaded file /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/output.log
+2024-03-12 23:26:26,037 INFO    wandb-upload_1:24754 [upload_job.py:push():131] Uploaded file /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/requirements.txt
+2024-03-12 23:26:26,432 INFO    wandb-upload_2:24754 [upload_job.py:push():131] Uploaded file /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/config.yaml
+2024-03-12 23:26:26,433 INFO    wandb-upload_3:24754 [upload_job.py:push():131] Uploaded file /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/files/wandb-summary.json
+2024-03-12 23:26:26,637 INFO    Thread-11 :24754 [sender.py:transition_state():613] send defer: 11
+2024-03-12 23:26:26,638 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:26,638 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-12 23:26:26,638 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:26,638 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-03-12 23:26:26,638 INFO    SenderThread:24754 [file_pusher.py:join():178] waiting for file pusher
+2024-03-12 23:26:26,644 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 12
+2024-03-12 23:26:26,644 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:26,644 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-12 23:26:26,644 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:26,644 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-03-12 23:26:26,645 INFO    SenderThread:24754 [file_stream.py:finish():595] file stream finish called
+2024-03-12 23:26:26,824 INFO    SenderThread:24754 [file_stream.py:finish():599] file stream finish is done
+2024-03-12 23:26:26,824 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 13
+2024-03-12 23:26:26,825 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:26,825 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-12 23:26:26,825 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:26,825 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-03-12 23:26:26,826 INFO    SenderThread:24754 [sender.py:transition_state():613] send defer: 14
+2024-03-12 23:26:26,826 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: defer
+2024-03-12 23:26:26,826 INFO    HandlerThread:24754 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-12 23:26:26,826 DEBUG   SenderThread:24754 [sender.py:send():378] send: final
+2024-03-12 23:26:26,826 DEBUG   SenderThread:24754 [sender.py:send():378] send: footer
+2024-03-12 23:26:26,826 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: defer
+2024-03-12 23:26:26,826 INFO    SenderThread:24754 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-03-12 23:26:26,828 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-12 23:26:26,828 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: poll_exit
+2024-03-12 23:26:26,829 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-12 23:26:26,830 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: server_info
+2024-03-12 23:26:26,830 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-12 23:26:26,831 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-12 23:26:26,831 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: server_info
+2024-03-12 23:26:26,831 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: job_info
+2024-03-12 23:26:27,082 DEBUG   SenderThread:24754 [sender.py:send_request():405] send_request: job_info
+2024-03-12 23:26:27,083 DEBUG   HandlerThread:24754 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-12 23:26:27,083 INFO    HandlerThread:24754 [handler.py:finish():869] shutting down handler
+2024-03-12 23:26:27,839 INFO    WriterThread:24754 [datastore.py:close():296] close: /Users/akospeter/Personal/Research/boilerplate-detection/wandb/run-20240312_232431-hpvh3kmz/run-hpvh3kmz.wandb
+2024-03-12 23:26:28,087 INFO    SenderThread:24754 [sender.py:finish():1521] shutting down sender
+2024-03-12 23:26:28,088 INFO    SenderThread:24754 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-12 23:26:28,088 INFO    SenderThread:24754 [file_pusher.py:join():178] waiting for file pusher

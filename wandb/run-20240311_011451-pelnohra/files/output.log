@@ -1,0 +1,20 @@
+
+Starting Training
+
+
+
+
+
+
+
+
+
+100%|██████████| 10/10 [00:41<00:00,  4.13s/it]
+Traceback (most recent call last):
+  File "/Users/akospeter/Personal/Research/boilerplate-detection/train_ltsm.py", line 142, in <module>
+    train()
+  File "/Users/akospeter/Personal/Research/boilerplate-detection/train_ltsm.py", line 136, in train
+    log_metrics(model, test_loader, criterion)
+  File "/Users/akospeter/Personal/Research/boilerplate-detection/train_ltsm.py", line 99, in log_metrics
+    predicted_labels.extend(predicted.squeeze().tolist())
+TypeError: 'float' object is not iterable

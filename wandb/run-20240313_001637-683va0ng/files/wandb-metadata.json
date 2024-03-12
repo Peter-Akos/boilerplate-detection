@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.3.1-arm64-arm-64bit",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-03-12T22:16:38.148353",
+    "startedAt": "2024-03-12T22:16:37.164755",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/akospeter/Personal/Research/boilerplate-detection/train_ltsm.py",
+    "codePathLocal": "train_ltsm.py",
+    "codePath": "train_ltsm.py",
+    "git": {
+        "remote": "https://github.com/Peter-Akos/boilerplate-detection",
+        "commit": "e79dce5117e3c1fe0fcb380f0750a086369d3e90"
+    },
+    "email": "peterakos19@gmail.com",
+    "root": "/Users/akospeter/Personal/Research/boilerplate-detection",
+    "host": "Connatixs-MacBook-Pro.local",
+    "username": "akospeter",
+    "executable": "/Users/akospeter/Personal/Research/boilerplate-detection/env/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.433845520019531
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

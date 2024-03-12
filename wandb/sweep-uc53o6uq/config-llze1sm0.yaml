@@ -1,0 +1,18 @@
+wandb_version: 1
+
+data_path:
+  value: cleaneval.csv
+dropout:
+  value: 0
+hidden_size:
+  value: 128
+learning_rate:
+  value: 0.001
+model_nr:
+  value: 1
+num_epochs:
+  value: 100
+num_layers:
+  value: 2
+split:
+  value: 55-5-676
