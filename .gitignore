@@ -4,3 +4,4 @@ cleaneval/
 .idea/
 .DS_Store
 wandb/
+__pycache__/
