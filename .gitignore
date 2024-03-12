@@ -3,3 +3,4 @@ cleaneval.csv
 cleaneval/
 .idea/
 .DS_Store
+wandb/
