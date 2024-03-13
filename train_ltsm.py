@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 import pandas as pd
 from torch import nn, optim
@@ -20,7 +22,9 @@ NUM_LAYERS = 2
 LEARNING_RATE = 0.001
 NUM_EPOCHS = 2
 DROPOUT = 0.5
-BEST_TEST_F1 = 0
+
+SWEEP_ID = ""
+RUN_NR = 1
 
 TRAINING_TYPE = "SWEEP"
 # TRAINING_TYPE = "RUN"
@@ -44,6 +48,9 @@ def configure_wandb():
         train()
     else:
         sweep_id = wandb.sweep(sweep_config, project="boilerplate-detection")
+        global SWEEP_ID
+        SWEEP_ID = sweep_id
+        os.makedirs(f"models/{sweep_id}")
         wandb.agent(sweep_id, train, count=NR_RUNS)
 
 
@@ -104,7 +111,7 @@ def load_dataset(split=None, data_path=None):
     return train_loader, validation_loader, test_loader
 
 
-def log_metrics(model, test_loader, criterion, split):
+def log_metrics(model, test_loader, criterion, split, save_table=False, ret_cls_report=False):
     model.eval()
     predicted_labels = []
     true_labels = []
@@ -133,17 +140,27 @@ def log_metrics(model, test_loader, criterion, split):
     predicted_labels = np.array(predicted_labels)
     true_labels = np.array(true_labels)
     metrics = classification_report(true_labels, predicted_labels, output_dict=True)
-    f1 = metrics["macro avg"]["f1-score"]
+    f1 = float(metrics["macro avg"]["f1-score"])
     accuracy = metrics.pop("accuracy")
 
-    wandb.log({f"{split}_accuracy": accuracy, f"{split}_loss": test_loss, f"{split}_f1": f1})
+    res = {f"{split}_accuracy": accuracy, f"{split}_loss": test_loss, f"{split}_f1": f1}
 
-    global BEST_TEST_F1
-    if split == "test" and float(f1) > BEST_TEST_F1:
-        BEST_TEST_F1 = float(f1)
+    if save_table:
         table_to_log = pd.DataFrame(metrics).T
         t = wandb.Table(dataframe=table_to_log)
-        wandb.log({f"Best f1: {f1}": t})
+        wandb.log({f"Classification report on test for f1: {f1}": t})
+
+    if ret_cls_report:
+        return res, metrics
+
+    return res
+
+    # global BEST_VALIDATION_F1
+    # if split == "validation" and float(f1) > BEST_VALIDATION_F1:
+    #     BEST_TEST_F1 = float(f1)
+    #     table_to_log = pd.DataFrame(metrics).T
+    #     t = wandb.Table(dataframe=table_to_log)
+    #     wandb.log({f"Best f1: {f1}": t})
 
 
 def build_model(model_nr, hidden_size, num_layers, dropout):
@@ -161,6 +178,7 @@ def train(config=None):
     if TRAINING_TYPE == "RUN":  # we are in a run
         print("Starting run")
         model = LSTMModel(640, HIDDEN_SIZE, NUM_LAYERS, 1, DROPOUT)
+        run_nr = 0
         train_loader, validation_loader, test_loader = load_dataset()
         num_epochs = NUM_EPOCHS
         lr = LEARNING_RATE
@@ -168,6 +186,9 @@ def train(config=None):
     else:  # we are in a sweep
         print("Starting run in a sweep")
         run = wandb.init(config=config)
+        global RUN_NR
+        run_nr = RUN_NR
+        RUN_NR += 1
         config = wandb.config
         model = build_model(config.model_nr, config.hidden_size, config.num_layers, config.dropout)
         train_loader, validation_loader, test_loader = load_dataset(config.split, config.data_path)
@@ -190,6 +211,9 @@ def train(config=None):
     # wandb.define_metric("validation_f1", summary="max", goal="minimize")
 
     print("Starting Training")
+    best_validation_f1 = 0
+    models_nr = 0
+    results = []  # run_nr, model_nr, validation_f1, test_f1
 
     for _ in tqdm(range(num_epochs)):
         for inputs, labels in train_loader:
@@ -198,9 +222,23 @@ def train(config=None):
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
-        log_metrics(model, train_loader, criterion, "train")
-        log_metrics(model, validation_loader, criterion, "validation")
-        log_metrics(model, test_loader, criterion, "test")
+        # log_metrics(model, train_loader, criterion, "train")
+        metrics = log_metrics(model, validation_loader, criterion, "validation")
+        f1_vali = metrics['validation_f1']
+        if f1_vali > best_validation_f1:
+            best_validation_f1 = f1_vali
+            test_metrics = log_metrics(model, test_loader, criterion, "test")
+            f1_test = test_metrics['test_f1']
+            metrics.update(test_metrics)
+            torch.save(model.state_dict(),
+                       f'models/{SWEEP_ID}/{run_nr}_{models_nr}.pth')
+            results.append([run_nr, models_nr, f1_vali, f1_test])
+            models_nr += 1
+        wandb.log(metrics)
+
+        t = wandb.Table(data=results, columns=["Run number", "Model number", "Validation f1-score", "Test f1-score"])
+        wandb.log({f"Best models": t})
+
     print("Finished Training")
     if TRAINING_TYPE == "SWEEP":
         run.finish()
