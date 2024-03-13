@@ -5,3 +5,4 @@ cleaneval/
 .DS_Store
 wandb/
 __pycache__/
+/models/
