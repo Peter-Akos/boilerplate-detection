@@ -14,20 +14,20 @@ sweep_config = {
                 [0.0, 0.25, 0.5]
         },
         'model_nr': {
-            'values':
-                [1, 2, 3, 4]
+            'value':
+                4,
         },
         'data_path': {
             'value':
-                "cleaneval.csv"
+                "cleaneval.csv",
         },
         'split': {
             'value':
-                "55-5-676"
+                "55-5-676",
         },
         'num_layers': {
             'value':
-                2
+                2,
         },
         'learning_rate': {
             'values':
@@ -35,7 +35,17 @@ sweep_config = {
         },
         'num_epochs': {
             'value':
-                100
+                100,
         },
+        'input_subset': {
+            'values':
+                ["html_only", "graph_only", "text_only", "html+graph", "html+text", "graph+text", "all"]
+            # html_only, graph_only, text_only, html+graph, html+text, graph+text, all
+        },
+        'scaler': {
+            'values':
+                ["MinMax", "Off", "Standard"]
+            #  ["MinMax", "Off", "Standard"]
+        }
     }
 }
